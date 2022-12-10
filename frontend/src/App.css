@@ -1,0 +1,259 @@
+
+/* Google font  */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:wght@400);
+
+/* Modern normalize  */
+@import '../node_modules/modern-normalize/modern-normalize.css';
+
+/* Global color variables */
+:root {
+--backgroundLight: rgb(233, 233, 233);
+--borderButton: rgba(62, 143, 81, 1);
+--fontColorDark: rgb(28, 46, 46);
+--fontColorLight: whitesmoke;
+}
+
+/* Viewport */
+body {                    
+  background-color: var(--backgroundLight);
+  color: var(--fontColorDark);
+  border: 1px solid var(--fontColorDark);
+  font-family:'Open Sans', sans-serif;
+  font-size: 1.1em;
+  font-weight: 500;
+  margin: 1px;
+  padding: 1px;
+}
+
+/* Navigation */
+nav {
+  background-color: var(--backgroundLight);
+  color: var(--fontColorDark);
+  border: none;
+  font-size: 1.2em; 
+  font-weight: bold;
+  line-height: 1.2em;
+  margin: 0px auto;
+  padding: 35px 0px 15px 0px;
+  text-decoration: none;
+  vertical-align: center;
+  text-align: center; 
+  width: 900px;
+}
+
+nav a {
+  background-color: var(--borderButton);
+  color: whitesmoke;
+  border: none;
+  font-size: 1.2em; 
+  font-weight: bold;
+  line-height: 1.2em;
+  margin: 0px 5px;
+  padding: 7px 10px;
+  text-decoration: none;
+  vertical-align: center; 
+  border-radius:5px; 
+  text-align: center;
+}
+
+nav a:hover {
+  background-color: var(--fontColorLight);
+  color: var(--fontColorDark);
+  border: 2px solid var(--borderButton);
+  font-size: 1.2em; 
+  font-weight: bold;
+  line-height: 1.2em;
+  margin: 0px 5px;
+  padding: 7px 10px;
+  text-decoration: none;
+  vertical-align: center;
+  border-radius:5px; 
+  text-align:center;
+}
+
+/* Page layout */
+
+header {
+  background-color: var(--backgroundLight);
+  color: var(--fontColorDark);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 2px solid var(--borderButton);
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0px auto;
+  padding: 0px 0px 5px 0px;
+  text-align: center;
+  width: 900px;
+}
+
+main {
+  background-color: var(--backgroundLight);
+  color: var(--fontColorDark);
+  border: none;
+  padding: 20px 0px 30px 0px;;
+  margin: 0px auto;
+  text-align: center;
+  width: 900px;
+  min-height: 370px;
+}
+
+footer {
+  background-color: var(--backgroundLight);
+  color: var(--fontColorDark);
+  border: none;
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0px auto;
+  padding: 1px 0px;
+  text-align: center;
+  width: 900px;
+}
+
+/* Typography  */
+h2 {
+  margin-top: -5px;
+}
+
+/* Tables */
+
+table {
+  border-collapse: collapse;
+  border: none;
+  padding: 1px;
+  min-width: 650px;
+  max-width: 800px;
+  margin: 0px auto;
+  text-align: center;
+}
+
+caption {
+  background-color: var(--borderButton);
+  color: var(--fontColorLight);
+  font-size: 1.2em;
+  font-weight: bold;
+  min-width: 650px;
+  max-width: 830px;
+  padding: 8px 0px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+th {
+  height: 1.6em;
+}
+
+th, tr, td {
+  border: 1px solid var(--borderButton);
+  padding: 5px 5px;
+}
+
+th {
+  background-color: rgba(62, 143, 81, 0.1)
+}
+
+tr:nth-child(even) {
+  background-color: rgba(62, 143, 81, 0.1)
+}
+tr:nth-child(odd) {
+  background-color: var(--fontColorLight);
+}
+
+td:nth-child(1) {
+  text-align: left;
+}
+th:nth-child(1) {
+  text-align: left;
+}
+
+/* Forms */
+
+fieldset {
+  border: 2px solid var(--borderButton);
+  margin-left: auto;
+  margin-right: auto;
+  width: 480px;
+  font-size: 1.1em;
+  border-radius:5px 5px;
+}
+
+legend {
+  background-color: var(--borderButton);
+  color: var(--fontColorLight);
+  border: 1px solid var(--fontColorLight);
+  font-weight: bold;
+  font-size: 1.2em;
+  padding: 3px 20px;
+  border-radius: 3px;
+}
+
+button {
+  color: var(--fontColorLight);
+  font-family:'Open Sans', sans-serif;
+  font-size: 1.2em;
+  background-color: var(--borderButton);
+  border: none;
+  height: 40px;
+  width: 100px;
+  font-weight: bold;
+  margin: 15px 0px 15px 0px;
+  padding: 3px 3px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--fontColorLight);
+  color: var(--fontColorDark);
+  border: 2px solid var(--borderButton);
+}
+
+select {
+  color: var(--fontColorDark);
+  font-family:'Open Sans', sans-serif;
+  font-size: 1em;
+  padding: 2px;
+}
+
+#name, #reps, #weight, #unit, #date {
+  height: 35px;
+  padding: 2px;
+  margin-bottom: 12px;
+  font-size: 1em;
+}
+
+#name {
+  margin-top: 20px;
+  width: 200px;
+}
+
+#reps {
+  width: 70px;
+  margin-right: 44px;
+}
+
+#weight {
+  width: 70px;
+  margin-right: 63px;
+}
+
+#unit {
+  width: 90px;
+  height: 33px;
+  margin-right: 18px;
+}
+
+#date {
+  width: 150px;
+  height: 35px;
+  margin-right: -36px;
+}
+
+/* Media */
+.App-logo {
+  font-size: 60px;
+  color: var(--borderButton);
+  pointer-events: none;
+  padding: 0px 0px 10px 0px;
+}
